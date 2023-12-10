@@ -16,7 +16,7 @@ const handleEmail=(e)=>{
 setEmail(e.target.value)
 }
 const handlePass=(e)=>{
-setEmail(e.target.value)
+setPassword(e.target.value)
 }
 const handleSubmit=()=>{
   document.getElementById('emailText').innerText=`Your Email : ${email}`;
