@@ -19,13 +19,20 @@ const handlePass=(e)=>{
 setPassword(e.target.value)
 }
 const handleSubmit=()=>{
-  document.getElementById('emailText').innerText=`Your Email : ${email}`;
-  document.getElementById('passwordText').innerText=`Your Password : ${email}`;
+  const emailText=document.getElementById('emailText');
+ const passText=document.getElementById('passwordText');
+ const emailIP=emailRef.current;
+ const passwordIP=passwordRef.current;
+
+if(emailIP && passwordIP && emailText&&passText)
+{  
+  emailText.innerText=`Your Email : ${email}`;
+  passText.innerText=`Your Password : ${email}`;
   if(!email.trim()){
-    emailRef.current.focus();
+    emailIP.focus();
   }else if(!password.trim()){
-    passwordRef.current.focus();
-  }
+    passwordIP.current.focus();
+  }}
 };
 
 
