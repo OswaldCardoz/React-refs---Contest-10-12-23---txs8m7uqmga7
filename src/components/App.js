@@ -27,7 +27,7 @@ const handleSubmit=()=>{
 if(emailIP && passwordIP && emailText&&passText)
 {  
   emailText.innerText=`Your Email : ${email}`;
-  passText.innerText=`Your Password : ${email}`;
+  passText.innerText=`Your Password : ${password}`;
   if(!email.trim()){
     emailIP.focus();
   }else if(!password.trim()){
