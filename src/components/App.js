@@ -31,7 +31,7 @@ if(emailIP && passwordIP && emailText&&passText)
   if(!email.trim()){
     emailIP.focus();
   }else if(!password.trim()){
-    passwordIP.current.focus();
+    passwordIP.focus();
   }}
 };
 
